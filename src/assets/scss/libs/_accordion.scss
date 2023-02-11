@@ -1,0 +1,134 @@
+@charset "UTF-8";
+/**
+ * Accordion v3.3.2
+ * Lightweight and accessible accordion module created in pure Javascript
+ * https://github.com/michu2k/Accordion
+ *
+ * Copyright (c) Michał Strumpf
+ * Published under MIT License
+ */
+
+.ac {
+    background: linear-gradient(275.98deg, #121212 3.53%, #181818 97.46%), #FFFFFF;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    color: white;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 15px;
+    padding: 0 25px;
+
+    @include netbook {
+        padding: 0 15px;
+        border-radius: 10px;
+    }
+}
+
+.ac .ac-header {
+    margin: 0;
+    padding: 0
+}
+
+.ac .ac-trigger {
+    text-align: left;
+    width: 100%;
+    color: white;
+    display: block;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: 700;
+    font-size: 22px;
+    padding: 15px 45px 15px 0;
+
+    @include laptop{
+        font-size: 18px;
+    }
+
+    @include netbook {
+        font-size: 16px;
+    }
+}
+
+.ac .ac-trigger::after {
+    content: "+";
+    text-align: center;
+    font-weight: 300;
+    font-size: 34px;
+    transform: translate(0, -50%);
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    color: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    border: 2px solid;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    transition: 300ms ease;
+
+    @include netbook {
+        font-size: 25px;
+        width: 28px;
+        height: 28px;
+        border-width: 1px;
+    }
+}
+
+.ac .ac-trigger:hover {
+    color: #06B0A1;
+}
+
+.ac .ac-trigger:hover::after {
+    background-color: #06B0A1;
+    color: white;
+    border-color: transparent;
+}
+
+.ac .ac-trigger:focus {
+    color: #06B0A1;
+}
+
+.ac .ac-panel {
+    overflow: hidden;
+    transition-property: height, visibility;
+    transition-timing-function: ease
+}
+
+.ac .ac-panel .ac-text {
+    color: white;
+    font-weight: 300;
+    font-size: 20px;
+    padding: 15px 0 15px;
+    margin: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    line-height: 1.4;
+
+    @include netbook {
+        font-size: 14px;
+    }
+}
+
+.ac .ac-panel .ac-text a {
+    color: white;
+    border-bottom: 1px solid;
+    text-decoration: none;
+}
+
+.ac.js-enabled .ac-panel {
+    visibility: hidden
+}
+
+.ac.is-active .ac-panel {
+    visibility: visible
+}
+
+.ac.is-active>.ac-header .ac-trigger::after {
+    transform: translate(0, -50%) rotate(45deg);
+    border-color: transparent;
+}

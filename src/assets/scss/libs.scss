@@ -1,2 +1,9 @@
-@import "libs/bootstrap/bootstrap-reboot.scss";
-@import "libs/bootstrap/bootstrap-grid.scss";
+// Normalize
+@import "libs/normalize";
+@import "libs/bootstrap";
+
+@import "libs/hamburger";
+@import "libs/swiperjs";
+@import "libs/fancybox";
+@import "libs/aos";
+@import "libs/compare";

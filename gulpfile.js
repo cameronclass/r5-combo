@@ -28,7 +28,7 @@ const path = {
     html: distPath,
     js: distPath + "assets/js/",
     css: distPath + "assets/css/",
-    images: distPath + "assets/images/",
+    images: distPath + "assets/img/",
     fonts: distPath + "assets/fonts/",
   },
   src: {
@@ -36,9 +36,8 @@ const path = {
     js: srcPath + "assets/js/app.js",
     css: srcPath + "assets/scss/*.scss",
     images:
-      srcPath +
-      "assets/images/**/*.{jpg,png,gif,ico,webp,webmanifest,xml,json}",
-    svg: srcPath + "assets/images/**/**/*.svg",
+      srcPath + "assets/img/**/*.{jpg,png,gif,ico,webp,webmanifest,xml,json}",
+    svg: srcPath + "assets/img/**/**/*.svg",
     fonts: srcPath + "/assets/fonts/**/*.{eot,woff,woff2,ttf,svg}",
     txt: srcPath + "*.txt",
   },
@@ -48,8 +47,8 @@ const path = {
     css: srcPath + "assets/scss/**/*.scss",
     images:
       srcPath +
-      "assets/images/**/**/*.{jpg,png,gif,ico,webp,webmanifest,xml,json}",
-    svg: srcPath + "assets/images/**/**/*.svg",
+      "assets/img/**/**/*.{jpg,png,gif,ico,webp,webmanifest,xml,json}",
+    svg: srcPath + "assets/img/**/**/*.svg",
     fonts: srcPath + "assets/fonts/**/*.{eot,woff,woff2,ttf,svg}",
     txt: srcPath + "*.txt",
   },

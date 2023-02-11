@@ -1,4 +1,3 @@
-
 @mixin mobile {
   @media screen and (max-width: 576px) {
     @content;
@@ -6,20 +5,25 @@
 }
 
 @mixin tablet {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     @content;
   }
 }
 
 @mixin netbook {
-  @media screen and (max-width: 992px) {
-    @content;
-  }
-}
-
-@mixin laptop {
   @media screen and (max-width: 1200px) {
     @content;
   }
 }
 
+@mixin laptop {
+  @media (min-width:1200px) and (max-width:1400px) {
+    @content;
+  }
+}
+
+@mixin laptop2 {
+  @media screen and (max-width: 1600px) {
+    @content;
+  }
+}

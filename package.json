@@ -28,5 +28,7 @@
         "> 1%",
         "IE 10"
     ],
-    "dependencies": {}
+    "dependencies": {
+        "node-sass": "npm:sass@^1.58.0"
+    }
 }

@@ -5,21 +5,26 @@
 
 /* Template */
 @import "common/fonts";
-@import "common/preloader";
-@import "common/buttons";
-@import "common/form";
+/* @import "common/pointer"; */
+
 @import "template";
-@import "classes";
+
+@import "common/modal";
+@import "common/buttons";
 
 /* Sections for all pages */
 @import "sections/header";
-@import "sections/footer";
+
 
 /* Pages */
 @import "pages/home";
+@import "pages/extra";
 
 /* Sliders */
 @import "common/sliders";
+@import "libs/accordion";
 
-/* Aos */
-//@import "libs/aos";
+
+@import "classes";
+
+@import "sections/footer";
