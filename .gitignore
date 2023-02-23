@@ -103,3 +103,6 @@ $RECYCLE.BIN/
 /package-lock.json
 /**/Thumbs.db
 /**/*.DS_Store
+
+
+/dist/
