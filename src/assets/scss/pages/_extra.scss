@@ -1,0 +1,62 @@
+.second {
+    background: url("../../../assets/img/section-2/") no-repeat fixed right;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+    .advantages__end {
+        align-items: end;
+    }
+
+    &__advantages {
+        margin-top: 35px;
+
+        &__end {
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+        }
+
+        .card-advantages {
+            flex-direction: column;
+            margin-bottom: 40px;
+
+            
+                &__column {
+                    display: flex;
+                    align-items: center;
+                }
+    
+                &__number {
+                    font-weight: 800;
+                    font-size: 72.7391px;
+                    color: #fff;
+                    margin-right: 10px;
+    
+                    @include laptop {
+                        font-size: 16px;
+                    }
+                }
+    
+                &__content {
+                    font-weight: 400;
+                    font-size: 18px;
+                    color: #fff;    
+                    line-height: 143.4%;
+                    width: 500px;
+                }
+            }
+        
+    }
+
+    .iframe {
+        width: 500px; 
+        height: 500px;
+    }
+
+
+    
+    }
+
+
